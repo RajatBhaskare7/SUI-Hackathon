@@ -9,6 +9,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const zkLoginRouter = require('./routes/zklogin');
+
+
 // const multer = require('multer');
 // const path = require('path');
 const cors = require("cors");
@@ -31,7 +34,9 @@ var corsOptions = {
 
 
 const PORT = process.env.PORT || 6001;
+
 app.use(cors());
+app.use('/api/zklogin', zkLoginRouter);
 app.use('/user', userRoute);
 app.use('/auth',authRoute);
 app.use('/admin',adminRoute);

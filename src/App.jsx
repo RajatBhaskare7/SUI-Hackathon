@@ -17,6 +17,7 @@ import AddInvestment from "views/admin/userprofile/investment/index.jsx"
 import ProfitBooking from "views/admin/userprofile/profitbooking/index";
 import ProtectAdmin from "utils/ProtectAdmin";
 import ProtectUser from "utils/ProtectUser";
+import Zklogin from "utils/zklogin";  
 import Editprofile from "views/user/profile/Editprofile/index";
 import axios from "axios";
 const App = () => {
@@ -42,7 +43,8 @@ const App = () => {
       <Route path="/admin/addtransaction/:id" element={<ProtectAdmin component={AddTransaction}/>} />
       <Route path="/admin/addinvestment/:id" element={<ProtectAdmin component={AddInvestment}/>} />
       <Route path="/admin/profitbooking/:id" element={<ProtectAdmin component={ProfitBooking} />} />
-
+     
+      <Route path="/zklogin" element={<Zklogin />} />
       
 
 
