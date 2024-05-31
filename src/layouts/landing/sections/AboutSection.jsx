@@ -14,10 +14,10 @@ export default function AboutSection() {
         <Heading
           className="max-w-[90%]"
           heading="About Us"
-          subHeading="Unleash the Power of Crypto with Titan Technologies "
+          subHeading="Unleash the Power of Crypto with TradXSui "
         />
         <span className="text-app_gray/80 leading-8 text-xl">
-        Titan Technologies is your trusted partner in the exciting world of cryptocurrencies. Our platform offers seamless investment solutions tailored to your needs, ensuring maximum returns with minimal risk. Join us and unlock the potential of crypto investing!
+        TradXSui is your trusted partner in the exciting world of cryptocurrencies. Our platform offers seamless investment solutions tailored to your needs, ensuring maximum returns with minimal risk. Join us and unlock the potential of crypto investing!
         </span>
         <div className="row gap-2">
           {tags.map((tag, i) => (

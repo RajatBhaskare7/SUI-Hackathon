@@ -1,7 +1,7 @@
 export default function AppLogo({ className, ...props }) {
     return (
       <h2 {...props} className={`text-4xl font-redzone app-logo ${className}`}>
-        Titan Technologies
+        TradXSui
       </h2>
     )
     return (

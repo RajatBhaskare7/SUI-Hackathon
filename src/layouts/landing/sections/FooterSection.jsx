@@ -3,19 +3,19 @@ import { FaGithub, FaBitcoin,FaInstagram } from "react-icons/fa";
 import { RiDiscordFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
-const socialIcons = [{
-  icon:"AiOutlineTwitter",
-  link:'https://twitter.com/Aadi_Jain26',
-},
-  {
-    icon:"FaBitcoin",
-    link:'https://bitcoin.org'
-  },
-  {
-    icon:"FaInstagram",
-    link:"https://www.instagram.com/titantechnologies.in/"
-  }
-];
+// const socialIcons = [{
+//   icon:"AiOutlineTwitter",
+//   link:'https://twitter.com/Aadi_Jain26',
+// },
+//   {
+//     icon:"FaBitcoin",
+//     link:'https://bitcoin.org'
+//   },
+//   {
+//     icon:"FaInstagram",
+//     link:"https://www.instagram.com/titantechnologies.in/"
+//   }
+// ];
 
 const links = [
   [
@@ -45,17 +45,17 @@ export default function FooterSection() {
       {/* Left Section */}
       <div className="col w-full justify-between  gap-2">
         <div className=" flex justify-between  w-full space-y-3">
-          <h3 className="font-redzone mb-3 text-6xl">Titan Technologies</h3>
+          <h3 className="font-redzone mb-3 text-6xl">TradXSui</h3>
           <div style={{
             right:'0',
             display:'flex',
             flexDirection:'column',
             gap:'2rem'
           }}>
-            <span className="text-app_gray mt-4 text-sm ">
+            {/* <span className="text-app_gray mt-4 text-sm ">
               titantechnologies@titantechnologies.in
-            </span>
-            <div className="row mb-2 gap-4">
+            </span> */}
+            {/* <div className="row mb-2 gap-4">
             {socialIcons.map((item, i) => {
     let IconComponent = null;
 
@@ -81,7 +81,7 @@ export default function FooterSection() {
       )
     );
   })}
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -90,8 +90,7 @@ export default function FooterSection() {
         </span>
       </div>
       {/* Right Section */}
-      {/* <div className="row md:gap-24 gap-6">
-        {links.map((group, idx) => (
+      {/* <div className="row md:gap-24 gap-6"> (
           <ul key={idx + 1} className="col gap-2">
             {group.map((link, i) => (
               <li key={link}>

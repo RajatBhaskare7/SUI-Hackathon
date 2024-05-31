@@ -32,10 +32,10 @@ export default function Landing() {
         <Header />
         <MainSection />
         <AboutSection />
-        <FeaturesSection />
+        {/* <FeaturesSection /> */}
         
-        <Popularity />
-        <FAQSection />
+        {/* <Popularity /> */}
+        {/* <FAQSection /> */}
         {/* <CollectionSection /> */}
         <Contact />
         
