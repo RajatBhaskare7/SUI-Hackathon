@@ -36,7 +36,7 @@ var corsOptions = {
 const PORT = process.env.PORT || 6001;
 
 app.use(cors());
-app.use('/api/zklogin', zkLoginRouter);
+
 app.use('/user', userRoute);
 app.use('/auth',authRoute);
 app.use('/admin',adminRoute);
@@ -77,6 +77,15 @@ app.post('/send-email', (req, res) => {
 
 });
 
+app.post('/get-salt', (req, res) => {
+  const salt = '129390038577185583942388216820280642146';
+  res.json({ salt });
+});
+
+app.get('/ping', (req, res) => {
+  res.status(200).send('pong\n');
+});
+
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
@@ -88,3 +97,7 @@ mongoose
    
   })
   .catch((error) => console.log(`${error} did not connect`));
+
+ 
+
+  

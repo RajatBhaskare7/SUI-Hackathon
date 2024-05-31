@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Tables from './components/Table'
 import axios from 'axios';
+import { Spot } from 'kriya-dex-sdk';
+
+
 export default function Market() {
     const [coindata,setCoindata]= useState([]);
     const [loading,setLoading] =useState(true);

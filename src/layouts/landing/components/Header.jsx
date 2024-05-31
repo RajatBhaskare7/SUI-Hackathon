@@ -2,6 +2,7 @@ import AppLogo from "./sub-components/AppLogo";
 // import ThemeControl from "./sub-components/ThemeControl";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
 const links = [ "FAQ", "CONTACT"];
 
 export default function Header() {
@@ -75,6 +76,7 @@ export default function Header() {
                     >
                         Login Admin
                     </button>
+                  
                 </Link>
                 {/* <Link to="auth/user">
                     <button
@@ -109,7 +111,7 @@ export default function Header() {
                 ))}
             </div>
             <div className="flex hidden sm:block">
-                <Link to="auth/admin">                
+            <Link to="auth/admin">                
                     <button
                         type="button"
                         style={{
@@ -121,13 +123,19 @@ export default function Header() {
                         Login Admin
                     </button>
                 </Link>
-                {/* <Link to
+                <Link to="/zklogin">                
+                    <button
+                        type="button"
+                        style={{
+                            margin: '10px',
+                            fontFamily: 'Redzone'
                         }}
                         className={`rounded-full py-3 px-5 bg-[#4326f3] hover:bg-[#3b1dff]`}
                     >
-                        Login User
+                        Login ZK
                     </button>
-                </Link> */}
+                </Link>
+                
             </div>
         </div>
     </header>

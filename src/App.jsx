@@ -17,11 +17,16 @@ import AddInvestment from "views/admin/userprofile/investment/index.jsx"
 import ProfitBooking from "views/admin/userprofile/profitbooking/index";
 import ProtectAdmin from "utils/ProtectAdmin";
 import ProtectUser from "utils/ProtectUser";
-import Zklogin from "utils/zklogin";  
+import { ZKButton } from "./utils/zklogin";  
 import Editprofile from "views/user/profile/Editprofile/index";
 import axios from "axios";
+
+
 const App = () => {
   const [isAuth, setIsAuth] = React.useState(true);
+  const [user, setUser] = React.useState(null);
+
+
  
 
   //write a nodejs server to get the data from the database and send it to the frontend
@@ -44,7 +49,7 @@ const App = () => {
       <Route path="/admin/addinvestment/:id" element={<ProtectAdmin component={AddInvestment}/>} />
       <Route path="/admin/profitbooking/:id" element={<ProtectAdmin component={ProfitBooking} />} />
      
-      <Route path="/zklogin" element={<Zklogin />} />
+      <Route path="/zklogin" element={<ZKButton />} />
       
 
 
