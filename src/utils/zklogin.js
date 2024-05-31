@@ -248,7 +248,7 @@ const ZKButton = () => {
             signer: ephemeralKeyPair,
         });
 
-        const singer = new RawSigner(signature);
+
 
         // Generate an address seed by combining userSalt, sub (subject ID), and aud (audience)
         const addressSeed = genAddressSeed(
