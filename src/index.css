@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --main-font: "Nominee";
+    --main-text: #fff;
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: var(--main-font);
+    
+    
+    
+}
+body{
+    background-color: #0B1437 !important;
+}
+.border {
+    border: 1px solid #ccc;
+}
+html {
+    overflow: hidden;
+    height: 100%;
+}
+.scroll-container { 
+    height: 300px; 
+    overflow-y: scroll; 
+} 
+
+.scroll-container::-webkit-scrollbar { 
+    width: 10px; 
+} 
+
+.scroll-container::-webkit-scrollbar-track { 
+    background:#211E30;
+} 
+
+.scroll-container::-webkit-scrollbar-thumb { 
+    background: #333040;
+} 
+
+.scroll-container::-webkit-scrollbar-thumb:hover { 
+    background: #333040;
+} 
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:#0B1437;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #111C44;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #111C44;
+  }
+
+   
+
+body {
+    
+    overflow-x: hidden;
+    overflow: auto;
+    height: 100%
+    
+   
+}
+.app-bg{
+	background-color: #211E30;
+	color: #fff;
+}
+@font-face {
+    font-family: "Redzone";
+    src: url("../public/fonts/VTFRedzone-Classic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nominee";
+    src: url("../public/fonts/Nominee-Medium.ttf") format("truetype");
+}
+
+ /* .app-bg {
+    @apply text-[var(--main-text)];
+} */
+
+
+.font-redzone {
+    font-family: "Redzone";
+}
+
+.font-nominee {
+    font-family: "Nominee";
+} 
+
+@layer {
+    .col {
+        @apply flex flex-col flex-wrap;
+    }
+
+    .row {
+        @apply flex flex-row flex-wrap;
+    }
+
+    .center {
+        @apply items-center justify-center;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+button {
+    @apply active:scale-90 transition-transform duration-200;
+}
+
+/* THEME */
+
+.round-gradient {
+    z-index: -1;
+    /* min-height: 100dvh; */
+    /* background: radial-gradient(#9500b3, #56b1fc, transparent); */
+    /* background: radial-gradient(circle at top right, #292442, #330e3a, #1d1b27); */
+}
+
+.dark.round-gradient {
+    background: radial-gradient(circle at top right, #292442, #1d1b27);
+}
+
+.light.round-gradient {
+    background: radial-gradient(circle at top right, #2b0a38, #1c192b);
+}
+
+.app-logo {
+    background: linear-gradient(
+        135deg,
+        rgba(33, 150, 243, 1) 10%,
+        rgba(218, 112, 214, 1) 30%,
+        rgba(255, 255, 255, 1) 90%,
+        rgba(255, 255, 255, 0.705) 2%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
