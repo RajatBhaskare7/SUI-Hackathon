@@ -14,7 +14,7 @@ export default function MainSection() {
         
         <div className="flex justify-between ">
           {/* <Button>Get Started</Button>
-                    <Button outline={true}>Join Discord</Button> */}
+                    <Button n> */}
           <a href="#CONTACT">
             {" "}
             <button

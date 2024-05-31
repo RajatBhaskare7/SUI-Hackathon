@@ -76,7 +76,7 @@ export default function Header() {
                         Login Admin
                     </button>
                 </Link>
-                <Link to="auth/user">
+                {/* <Link to="auth/user">
                     <button
                         type="button"
                         style={{
@@ -86,7 +86,7 @@ export default function Header() {
                     >
                         Login User
                     </button>
-                </Link>
+                </Link> */}
                     </div>
                 </div>
             </div>
@@ -121,17 +121,13 @@ export default function Header() {
                         Login Admin
                     </button>
                 </Link>
-                <Link to="auth/user">
-                    <button
-                        type="button"
-                        style={{
-                            fontFamily: 'Redzone'
+                {/* <Link to
                         }}
                         className={`rounded-full py-3 px-5 bg-[#4326f3] hover:bg-[#3b1dff]`}
                     >
                         Login User
                     </button>
-                </Link>
+                </Link> */}
             </div>
         </div>
     </header>
